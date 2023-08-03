@@ -8,9 +8,12 @@ for i in range(n):
 #kth element input
 k_max = int(input("kth element: "))
 #finding the kth max element
-for _ in range(k_max-1):
-    max_ele = max(num_array)
-    num_array.remove(max_ele)
-print("The kth max num is: ",max(num_array))
+if k_max > len(num_array):
+    raise IndexError("k value larger than size of array")
+else:            
+    for _ in range(k_max-1):
+        max_ele = max(num_array)
+        num_array.remove(max_ele)
+    print("The kth max num is: ",max(num_array))
 
 
