@@ -1,3 +1,4 @@
+# program to check if strings are anagrams
 # input of strings and unpacking
 string_1 = input("enter string: ").lower().strip()
 l_string_1 = [*string_1]
